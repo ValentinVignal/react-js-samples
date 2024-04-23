@@ -31,3 +31,38 @@ body {
     text-wrap: balance;
   }
 }
+
+
+* {
+  box-sizing: border-box;
+}
+
+.search-bar {
+  font-family: sans-serif;
+  margin: 15px;
+  width: 300px;
+  position: relative;
+
+  .search-bar__input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.3em;
+  }
+
+  .search-bar__autocomplete-container {
+    border: 1px solid black;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+
+    .search-bar__autocomplete-item {
+      padding: 10px;
+
+      &:hover {
+        background-color: #66f;
+        cursor: pointer;
+        user-select: none;
+      }
+    }
+  }
+}
